@@ -18,7 +18,7 @@ export class HomeController {
     await connection.close();
 
     // createConnection()
-    //   .then(connection => {
+    //   .then(connection => {·
     //     const bind_github_user = new Bind_github_user();
     //     bind_github_user.evm_address ='0x000';
     //     bind_github_user.github_user_name = 'zombieliu';
