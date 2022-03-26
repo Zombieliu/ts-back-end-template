@@ -11,6 +11,8 @@ export class HomeController {
     const result = await connection.getRepository(Bounty)
       .createQueryBuilder('bounty')
       .where('bounty.github_user_name = :github_user_name' ,{ github_user_name })
+      .andWhere('bounty.bounty_state = :bounty_state', { bounty_state: 'Review' })
+
       .getMany();
     await connection.close();
 
